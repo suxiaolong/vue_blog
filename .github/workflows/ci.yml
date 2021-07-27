@@ -46,8 +46,9 @@ jobs: # 工作流
             pwd
             cd /opt/blog-vue
             pwd
-            git pull origin dist-pages
-            ls
+            git --version
+            git pull
+            pwd
 
 
 
