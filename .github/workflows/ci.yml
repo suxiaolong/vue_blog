@@ -43,13 +43,17 @@ jobs: # 工作流
           password: ${{ secrets.PASSWORD_GOOGLE }}
           port: ${{ secrets.PORT2 }}
           script: |
+            whoami
             sudo su -
+            whoami
             pwd
             cd /opt/blog-vue
             pwd
+            whoami
             git --version
-            git pull
+            sudo git pull
             pwd
+            ll
 
 
 
