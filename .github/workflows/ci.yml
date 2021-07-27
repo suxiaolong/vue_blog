@@ -31,9 +31,9 @@ jobs: # 工作流
           npm install
           npm run build
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@4.1.4
+        uses: suxiaolong/github-pages-deploy-action@4.1.4
         with:
-          branch: dist-pages2 # The branch the action should deploy to.
+          branch: dist-pages # The branch the action should deploy to.
           folder: docs/.vuepress/dist # The folder the action should deploy.
 #      - name: Build and Deploy # 步骤3 （只提交到github可以使用这个步骤）
 #        uses: suxiaolong/github-pages-deploy-action@releases/v2 # 作用：将项目构建和部署到github。 https://github.com/JamesIves/github-pages-deploy-action
