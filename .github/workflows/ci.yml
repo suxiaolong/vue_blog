@@ -43,6 +43,7 @@ jobs: # 工作流
           password: ${{ secrets.PASSWORD_GOOGLE }}
           port: ${{ secrets.PORT2 }}
           script: |
+            sudo su -
             pwd
             cd /opt/blog-vue
             pwd
