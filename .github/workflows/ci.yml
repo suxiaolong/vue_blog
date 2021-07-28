@@ -39,7 +39,7 @@ jobs: # 工作流
           host: ${{ secrets.IP2 }}
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD_GOOGLE }}
-          port: ${{ secrets.PORT2 }}
+          port: ${{ secrets.PORT }}
           script: |
             whoami
             sudo su -
