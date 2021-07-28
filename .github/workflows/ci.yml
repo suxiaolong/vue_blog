@@ -38,10 +38,10 @@ jobs: # 工作流
       - name: executing remote ssh commands using password
         uses: suxiaolong/ssh-action@master
         with:
-          host: ${{ secrets.IP }}
+          host: ${{ secrets.IP2 }}
           username: ${{ secrets.USERNAME }}
-          password: ${{ secrets.PASSWORD }}
-          port: ${{ secrets.PORT }}
+          password: ${{ secrets.PASSWORD_GOOGLE }}
+          port: ${{ secrets.PORT2 }}
           script: |
             whoami
             sudo su -
