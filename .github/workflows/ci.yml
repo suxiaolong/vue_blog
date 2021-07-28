@@ -45,11 +45,6 @@ jobs: # 工作流
             sudo su -
             ./one.sh
             pwd
-            cd /opt/blog-vue
-            pwd
-            whoami
-            git --version
-            pwd
             ls
 
 
