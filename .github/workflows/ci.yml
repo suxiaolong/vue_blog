@@ -43,8 +43,10 @@ jobs: # 工作流
           script: |
             whoami
             sudo su -
-            ./one.sh
+            sh ./one.sh
             pwd
+            cd /opt/blog-vue
+            git pull
             ls
 
 
