@@ -44,6 +44,7 @@ jobs: # 工作流
             whoami
             sudo su -
             sh ./one.sh
+            yum -y install git
             pwd
             cd /opt/blog-vue
             git pull
