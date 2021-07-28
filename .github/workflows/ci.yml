@@ -35,7 +35,6 @@ jobs: # 工作流
 #          folder: docs/.vuepress/dist # The folder the action should deploy.
       - name: executing remote ssh commands using password
         uses: suxiaolong/ssh-action@master
-        run: sh ./one.sh
         with:
           host: ${{ secrets.IP2 }}
           username: ${{ secrets.USERNAME }}
@@ -44,7 +43,7 @@ jobs: # 工作流
           script: |
             whoami
             sudo su -
-            whoami
+            ./one.sh
             pwd
             cd /opt/blog-vue
             pwd
